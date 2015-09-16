@@ -36,6 +36,21 @@
 
 	<!-- Здесь пишем код -->
 
+
+<!--     Пример формы обратной связи          -->
+<!-- 
+	<div class="main"> 
+      <h3>Внимание</h3>
+      <p>Оставьте ваши контактные данные и наш консультант<br/>свяжется с вами в течении 30 секунд</p>
+       
+		<form id="application" action=" application.php" method="POST" name=" application ">
+			<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+			<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required/>
+			<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
+			<button class="applicationButton" type="submit" form="application"> Получить прайс </button>
+		</form>
+	</div>
+-->
 	<div class="hidden"></div>
 
 	<!--[if lt IE 9]>
@@ -48,23 +63,31 @@
 	<!-- Load CSS (remove/comment after release) -->
 	<script>
 	//Load Libs CSS
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="libs/animate/animate.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	var ms=document.createElement("link");
+
+	ms.rel="stylesheet";
+	ms.href="libs/animate/animate.css";
+	document.getElementsByTagName("head")[0].appendChild(ms);
 
 	//Header Styles (compress & paste to header after release)
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="css/_header.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	var ms=document.createElement("link");
+
+	ms.rel="stylesheet";
+	ms.href="css/_header.css";
+	document.getElementsByTagName("head")[0].appendChild(ms);
 	
 	//User Styles
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="css/_main.css";document.getElementsByTagName("head")[0].appendChild(ms);
-	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="css/_media.css";document.getElementsByTagName("head")[0].appendChild(ms);
-</script>
+	var ms=document.createElement("link");
 
-<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
-<script>var ms=document.createElement("link");ms.rel="stylesheet";
-	// ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	ms.rel="stylesheet";
+	ms.href="css/_main.css";
+	document.getElementsByTagName("head")[0].appendChild(ms);
+
+	var ms=document.createElement("link");
+
+	ms.rel="stylesheet";
+	ms.href="css/_media.css";
+	document.getElementsByTagName("head")[0].appendChild(ms);
 </script>
 
 <!-- Load Scripts -->
