@@ -31,9 +31,9 @@ $msg .= "</body></html>";
 
 // отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
-	echo "<center><img src='images/spasibo.png'></center>";
+	echo "<center><img src='img/spasibo.png'></center>";
 } else {
-	echo "<center><img src='images/ne-otpravleno.png'></center>";
+	echo "<center><img src='img/ne-otpravleno.png'></center>";
 }
 
 ?>
