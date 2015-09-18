@@ -6,7 +6,7 @@ $(document).ready(function() {
 		yaCounterXXXXXXXX.reachGoal("goal");
 		return true;
 	}));
-
+	new WOW().init();
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
