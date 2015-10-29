@@ -1,11 +1,12 @@
 'use strict'
 
 var gulp = require('gulp'),
-	concatCss = require('gulp-concat-css'),
 	minifyCss = require('gulp-minify-css'),
 	autoprefixer = require('gulp-autoprefixer'),
 	uglify = require('gulp-uglify'),
-	livereload = require('gulp-livereload');
+	sass = require('gulp-sass'),
+	livereload = require('gulp-livereload'),
+	rename = require('gulp-rename');
 
 // task for change html
 gulp.task('html',function(){
@@ -13,27 +14,28 @@ gulp.task('html',function(){
 });
 
 // task for css
-gulp.task('css', function () {
-	gulp.src('css/*.css')
-    .pipe(concatCss("main.min.css"))
+gulp.task('sass', function () {
+	gulp.src('sass/*.sass')
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer('last 10 version'))
-    .pipe(minifyCss())
-    .pipe(gulp.dest('min/css/'));
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('sass/'));
 });
 
 // task for JS 
 gulp.task('js', function() {
   return gulp.src('js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('min/js'));
+    .pipe(rename('common.min.js'))
+    .pipe(gulp.dest('js/'));
 });
 
 // taks for watch change files
 gulp.task('watch', function(){
-	gulp.watch('css/*.css', ['css']);
+	gulp.watch('scss/*.sass', ['sass']);
 	gulp.watch('index.html', ['html']);
 	gulp.watch('js/*.js', ['js']);
 });
 
 // default task
-gulp.task('default', ['html','css','js','watch']);
+gulp.task('default', ['html','sass','js','watch']);

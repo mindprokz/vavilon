@@ -3,7 +3,7 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
-
+<!-- html manifest="app.cache" -->
 <head>
 
 	<meta charset="utf-8">
@@ -65,23 +65,7 @@
 	//Header Styles (compress & paste to header after release)
 	var ms=document.createElement("link");
 	ms.rel="stylesheet";
-	ms.href="css/_header.css";
-	document.getElementsByTagName("head")[0].appendChild(ms);
-	
-	//User Styles
-	var ms=document.createElement("link");
-	ms.rel="stylesheet";
-	ms.href="css/_main.css";
-	document.getElementsByTagName("head")[0].appendChild(ms);
-
-	var ms=document.createElement("link");
-	ms.rel="stylesheet";
-	ms.href="css/_media.css";
-	document.getElementsByTagName("head")[0].appendChild(ms);
-
-	var ms=document.createElement("link");
-	ms.rel="stylesheet";
-	ms.href="css/_fonts.css";
+	ms.href="min/css/style.css";
 	document.getElementsByTagName("head")[0].appendChild(ms);
 </script>
 
