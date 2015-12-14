@@ -33,19 +33,20 @@
 	<!-- Здесь пишем код -->
 
 <!--     Пример формы обратной связи          -->
-<!-- 
-	<div class="main"> 
+	<div class="main">
       <h3>Внимание</h3>
       <p>Оставьте ваши контактные данные и наш консультант<br/>свяжется с вами в течении 30 секунд</p>
-       
-		<form id="application" action=" application.php" method="POST" name=" application ">
+
+		<form id="application" action="mail.php" method="POST" name=" application ">
 			<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
 			<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required/>
 			<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
-			<button class="applicationButton" type="submit" form="application"> Получить прайс </button>
+			<input type="submit">
+			<div id="app"> Отправить </div>
 		</form>
 	</div>
--->
+	<div id="mail" class="not_visible_mail">
+	</div>
 	<div class="hidden"></div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -65,7 +66,7 @@
 	//Header Styles (compress & paste to header after release)
 	var ms=document.createElement("link");
 	ms.rel="stylesheet";
-	ms.href="min/css/style.css";
+	ms.href="css/style.css";
 	document.getElementsByTagName("head")[0].appendChild(ms);
 </script>
 
