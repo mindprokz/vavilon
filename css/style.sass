@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic-ext')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic-ext')
+
 @import mail
 
 @mixin clear()
@@ -32,4 +35,646 @@ h1,h2,h3,h4,h5,h6
 a 
 	text-decoration : none
 
-			
+.bold
+	font-weight: 700
+
+.bold_din
+	font-family: 'DINPro-Bold', sans-serif
+.light
+	font-weight: 300
+.content
+	width: 1280px
+	padding: 0 25px
+	margin: auto
+
+nav
+	background: #004a6a
+	a
+		text-decoration: none
+		color: #fff
+		padding: 10px 25px 15px 25px
+		float: left
+		font-size: 14pt
+		font-weight: 700
+		transition: color .3s ease
+		&:hover
+			text-decoration: none
+			color: #c68f2a
+header
+	background: url(../img/background/podl.png) no-repeat center top
+	height: 178px
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 2
+	.number
+		float: left
+		margin-top: 55px
+		margin-left: 17%
+		div
+			font-size: 15pt
+			color: #fff
+			font-family: 'DINPro-Light', sans-serif
+		a
+			color: #fff
+			font-size: 12pt
+			font-family: 'DINPro-Regular', sans-serif
+			text-decoration: none
+			border-bottom: 1px dotted #fff
+			transition: color, border .3s, .3s ease, ease
+			&:hover
+				color: #f1f1f1
+				border-bottom: 1px dotted #fff
+				text-decoration: none
+	img
+		float: left
+		margin-left: 15.9%
+		margin-top: 19px
+	.changer
+		color: #fff
+		float: left
+		margin-top: 55px
+		margin-left: 210px
+		h3
+			font-family: 'DINPro-Bold'
+			font-size: 15pt
+			padding-bottom: 3px
+		a
+			color: #fff
+			text-decoration: none
+			&:hover
+				color: #fff
+				text-decoration: none
+		.day
+			float: left
+			.day_icon
+				background: url(../img/sprite.png) no-repeat -1657px 0
+				width: 19px
+				height: 19px
+				span
+					margin-left: 20px
+		.night
+			float: left
+			margin-left: 60px
+			.night_icon
+				background: url(../img/sprite.png) no-repeat -1675px 0
+				width: 19px
+				height: 19px
+				float: left
+				span
+					margin-left: 20px
+		.active span
+			border-bottom: 1px dotted #fff
+
+.section1
+	height: 92vh
+	position: relative
+	overflow: hidden
+	video
+		min-width: 100%
+		min-height: 100%
+		width: auto
+		height: auto
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+	.content
+		position: relative
+		height: 100%
+		.stock
+			width: 370px
+			height: 100px
+			float: right
+			color: #fff
+			background: rgba(198, 143, 42, .9)
+			border-radius: 10px
+			position: relative
+			padding-left: 20px
+			position: absolute
+			right: 0
+			bottom: 275px
+			h3
+				font-family: 'DINPro-Bold', sans-serif
+				font-size: 23pt
+				font-weight: 700
+				padding-top: 15px
+			p
+				font-family: 'DINPro-Regular', sans-serif
+				font-size: 13pt
+			.data
+				position: absolute
+				top: 0
+				right: 0
+				background: rgba(255, 255, 255, .9)
+				padding: 5px
+				font-family: 'DINPro-Bold', sans-serif
+				font-size: 11pt
+				color: #2f2f2f
+				border-bottom-left-radius: 6px
+		.quality
+			height: 200px
+			background: rgba(5, 104, 146, .85)
+			border-radius: 15px
+			position: absolute
+			bottom: 50px
+			left: 0
+			width: 100%
+			padding-top: 15px
+			.quality_elem
+				width: 273px
+				margin-left: 38px
+				float: left
+				h3
+					color: #fff
+					font-family: Roboto, sans-serif
+					font-weight: 700
+					font-size: 15pt
+					padding-top: 15px
+					padding-bottom: 10px
+				p
+					color: #fff
+					font-family: Roboto, sans-serif
+					font-size: 12pt
+				.quality_icon_1
+					margin: auto
+					background: url(../img/sprite.png) no-repeat -1415px 0
+					width: 67px
+					height: 50px
+				.quality_icon_2
+					margin: auto
+					background: url(../img/sprite.png) no-repeat -1546px 0
+					width: 58px
+					height: 50px
+				.quality_icon_3
+					margin: auto
+					background: url(../img/sprite.png) no-repeat -1601px 0
+					width: 57px
+					height: 50px
+				.quality_icon_4
+					margin: auto
+					background: url(../img/sprite.png) no-repeat -1360px 0
+					width: 57px
+					height: 50px
+
+.section2
+	position: relative
+	height: 881px
+	overflow-x: hidden
+	.content
+		position: relative
+	.video
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%, 0)
+	.wrapper
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background: url(../img/background/pattern.png) repeat
+		opacity: .7
+	.button
+		width: 500px
+		border: 3px solid #c68f2a
+		border-radius: 15px
+		position: absolute
+		top: 30%
+		left: 50%
+		transform: translate(-50%, -50%) scale(1)
+		padding: 15px 15px 17px 25px
+		cursor: pointer
+		transition: transform .3s ease
+		&:hover
+			transform: translate(-50%, -50%) scale(1.2)
+		.header_button
+			color: #fff
+			text-transform: uppercase
+			font-weight: 700
+			font-family: Roboto, sans-serif
+			font-size: 27pt
+			padding-top: 10px
+			margin-left: 15px
+			float: left
+		.icon_play
+			background: url(../img/sprite.png) no-repeat -1778px 0
+			width: 68px
+			height: 68px
+			float: left
+	.trigger
+		padding: 30px 0
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		background: rgba(22, 132, 195, .65)
+		.trigger_text
+			width: 600px
+			float: left
+			h2
+				font-size: 31pt
+				color: #fff
+				font-family: Roboto, sans-serif
+				font-weight: 700
+			p
+				color: #fff
+				font-family: Roboto, sans-serif
+				font-size: 14pt
+				margin: 25px 0
+				line-height: 1.3
+		form
+			float: right
+			width: 570px
+			h3
+				color: #fff
+				font-size: 22pt
+				font-weight: 700
+				padding-bottom: 10px
+			label
+				display: block
+				span
+					display: block
+					font-size: 11pt
+					color: #fff
+					font-family: Roboto, sans-serif
+					padding: 5px 0
+				input
+					background: rgba(255, 255, 255, .45)
+					border: 1px solid #fff
+					border-radius: 5px
+					outline: 0
+					padding: 9px 20px
+					font-size: 15pt
+					color: rgba(255, 255, 255, .5)
+					width: 100%
+				.first_input
+					width: 70px
+					margin-right: 10px
+				.second_input
+					width: 80px
+					margin-right: 10px
+				.third_input
+					width: 392px
+			button
+				background: #c68f2a
+				color: #fff
+				text-transform: uppercase
+				width: 100%
+				border: 0
+				font-weight: 700
+				font-size: 22pt
+				border-radius: 5px
+				margin-top: 20px
+				padding: 4px 0
+				transition: background .3s ease
+				&:hover
+					background: #e2a331
+
+.map
+	height: 830px
+	width: 100%
+	position: relative
+	overflow-y: hidden
+	#map_canvas
+		height: 105%
+		width: 100%
+	.map_contact
+		position: absolute
+		top: 0
+		left: 0
+		padding: 30px
+		background: rgba(5, 104, 146, .8)
+		color: #fff
+		width: 420px
+		margin: 120px 100px
+		h2
+			font-family: Roboto, sans-serif
+			font-size: 25pt
+		.line
+			height: 5px
+			width: 240px
+			border-radius: 5px
+			background: #fff
+			margin-bottom: 20px
+		p
+			font-family: Roboto, sans-serif
+			font-size: 11pt
+			margin-bottom: 25px
+		h3
+			color: #ecce98
+			font-size: 15pt
+			font-family: Roboto, sans-serif
+			font-weight: 700
+			margin-bottom: 20px
+		ul
+			list-style-type: none
+			li
+				margin-bottom: 10px
+				span
+					border-bottom: 1px dotted #fff
+					transition: color .3s ease
+					cursor: pointer
+					&:hover
+						color: #ecce98
+
+.section3
+	background: url(../img/background/white.png) no-repeat top center
+	.content
+		padding: 25px 25px
+		.qual_elem
+			width: 380px
+			text-align: center
+			float: left
+			margin: 40px 15px 40px 15px
+			.icon_qual_1
+				background: url(../img/sprite.png) no-repeat 0 0
+				width: 125px
+				height: 90px
+				margin: auto
+			.icon_qual_2
+				background: url(../img/sprite.png) no-repeat -128px 0
+				width: 125px
+				height: 90px
+				margin: auto
+			.icon_qual_3
+				background: url(../img/sprite.png) no-repeat -256px 0
+				width: 125px
+				height: 90px
+				margin: auto
+			.icon_qual_4
+				background: url(../img/sprite.png) no-repeat -384px 0
+				width: 125px
+				height: 90px
+				margin: auto
+			.icon_qual_5
+				background: url(../img/sprite.png) no-repeat -509px 0
+				width: 125px
+				height: 90px
+				margin: auto
+			.icon_qual_6
+				background: url(../img/sprite.png) no-repeat -636px 0
+				width: 125px
+				height: 90px
+				margin: auto
+			h3
+				color: #2e2e2e
+				font-family: Roboto, sans-serif
+				font-size: 12pt
+				padding-top: 10px
+
+.section4
+	background: url(../img/background/blue.png) no-repeat center top
+	.content
+		h2
+			padding-top: 20px
+			color: #4b4b4b
+			font-family: Roboto, sans-serif
+			font-size: 45pt
+			font-weight: 700
+			text-align: center
+			padding-bottom: 15px
+		p
+			width: 665px
+			color: #004e6f
+			font-family: Roboto, sans-serif
+			font-size: 14pt
+			margin-left: 245px
+			padding-bottom: 20px
+			line-height: 1.3
+		.quality
+			padding-top: 190px
+			padding-bottom: 50px
+			.box_quality
+				background: rgba(198, 143, 42, .8)
+				width: 270px
+				border-radius: 15px
+				padding: 15px 0px 20px 30px
+				position: relative
+				overflow: hidden
+				float: left
+				margin-left: 30px
+				.triangle
+					position: absolute
+					top: -44px
+					right: -15px
+					border: 100px solid transparent
+					border-top: 100px solid rgba(206, 161, 75, .5)
+					border-right: 100px solid rgba(206, 161, 75, .5)
+					transform: rotate(-22deg)
+				.icon_box_1
+					background: url(../img/sprite.png) no-repeat -762px 0
+					width: 52px
+					height: 53px
+				.icon_box_2
+					background: url(../img/sprite.png) no-repeat -823px 0
+					width: 52px
+					height: 53px
+				.icon_box_3
+					background: url(../img/sprite.png) no-repeat -877px 0
+					width: 58px
+					height: 53px
+				.icon_box_4
+					background: url(../img/sprite.png) no-repeat -935px 0
+					width: 59px
+					height: 53px
+				h3
+					line-height: 1
+					padding-top: 10px
+					.bold
+						font-family: Roboto, sans-serif
+						color: #2e2e2e
+						font-size: 24pt
+					.light
+						color: #fff
+						font-family: Roboto, sans-serif
+						font-size: 24pt
+.section5
+	background: url(../img/background/woman.png) no-repeat top center
+	.content
+		padding-bottom: 60px
+		form
+			float: left
+			width: 570px
+			h3
+				color: #2c2d2d
+				font-size: 22pt
+				font-weight: 700
+				padding-bottom: 10px
+				padding-top: 20px
+				text-transform: uppercase
+				text-align: center
+				font-family: Roboto, sans-serif
+			label
+				display: block
+				span
+					display: block
+					font-size: 11pt
+					color: #2c2d2d
+					font-family: Roboto, sans-serif
+					padding: 5px 0
+				input
+					background: rgba(22, 135, 195, .4)
+					border: 1px solid #fff
+					border-radius: 5px
+					outline: 0
+					padding: 9px 20px
+					font-size: 15pt
+					color: rgba(255, 255, 255, .8)
+					width: 100%
+				.first_input
+					width: 70px
+					margin-right: 10px
+				.second_input
+					width: 80px
+					margin-right: 10px
+				.third_input
+					width: 392px
+			button
+				background: #1684c3
+				color: #fff
+				text-transform: uppercase
+				width: 100%
+				border: 0
+				font-weight: 700
+				font-size: 22pt
+				border-radius: 5px
+				margin-top: 20px
+				padding: 4px 0
+				transition: background .3s ease
+				&:hover
+					background: #1b94da
+.section6
+	background: url(../img/background/card.png) no-repeat top center
+	.content
+		position: relative
+		h3
+			font-family: Roboto, sans-serif
+			font-size: 24pt
+			color: #fff
+			padding-top: 35px
+			text-transform: uppercase
+			padding-bottom: 40px
+		.footer
+			font-weight: 700
+			font-size: 32pt
+			text-align: center
+			padding-top: 0
+			padding-bottom: 25px
+		p
+			font-size: 19pt
+			color: #fff
+			font-family: Roboto, sans-serif
+			line-height: 1.3
+			padding-bottom: 20px
+		img
+			position: absolute
+			top: 90px
+			right: 50px
+		.price_block
+			width: 900px
+			.price_elem
+				width: 240px
+				float: left
+				margin: 0 30px
+				.icon_price_1
+					background: url(../img/sprite.png) no-repeat -993px 0
+					width: 84px
+					height: 80px
+					margin: auto
+				h3
+					font-weight: 700
+					font-size: 26pt
+					padding-bottom: 30px
+					text-shadow: 2px 2px 1px rgba(69, 69, 69, .5)
+					padding-top: 20px
+					text-align: center
+					line-height: 0.8
+					span
+						font-size: 15pt
+						padding-bottom: 0
+						padding-top: 0
+.main_map
+	height: 415px
+	width: 100%
+	overflow-y: hidden
+	#map_canvas_main
+		height: 480px
+		width: 100%
+footer
+	background: url(../img/background/element.png) no-repeat top center, #056892
+	padding-top: 30px
+	padding-bottom: 25px
+	position: relative
+	.content
+		color: #fff
+		z-index: 2
+		position: relative
+		.contacts
+			width: 500px
+			float: left
+			h3
+				font-family: Roboto, sans-serif
+				font-size: 15pt
+				font-weight: 700
+				padding-bottom: 1px
+			p
+				font-family: Roboto, sans-serif
+				font-size: 11pt
+				font-weight: 300
+				line-height: 1.6
+			.work
+				float: left
+				padding-bottom: 35px
+				padding-left: 30px
+			.price
+				padding-bottom: 35px
+				margin-left: 50px
+				float: left
+			.adress
+				padding-bottom: 15px
+				padding-left: 30px
+			.copyright
+				padding-bottom: 60px
+				padding-left: 30px
+		form
+			float: right
+			width: 270px
+			h3
+				font-weight: 700
+				font-size: 15pt
+				padding-bottom: 18px
+			span
+				display: block
+				padding-bottom: 10px
+			input
+				margin-bottom: 10px
+				height: 35px
+				width: 260px
+				color: #0f0f0f
+				padding: 5px
+			textarea
+				max-width: 260px
+				width: 260px
+				height: 55px
+				color: #0f0f0f
+				padding: 5px
+			button
+				float: right
+				margin-right: 10px
+				margin-top: 15px
+				background: none
+				border: 3px solid #fff
+				outline: 0
+				padding: 5px
+				width: 130px
+				text-transform: uppercase
+				font-family: Roboto, sans-serif
+				font-size: 12pt
+				font-weight: 700
+				transition: all .3s ease
+				&:hover
+					background: #fff
+					color: #3a3a3a
