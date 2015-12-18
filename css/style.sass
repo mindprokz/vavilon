@@ -24,6 +24,8 @@
 body
 	padding : 0
 	margin : 0
+	font-family: Roboto, sans-serif
+	min-width: 1280px
 
 h1,h2,h3,h4,h5,h6
 	-webkit-margin-before : 0
@@ -52,6 +54,7 @@ nav
 	a
 		text-decoration: none
 		color: #fff
+		font-family: Roboto, sans-serif
 		padding: 10px 25px 15px 25px
 		float: left
 		font-size: 14pt
@@ -114,6 +117,7 @@ header
 				height: 19px
 				span
 					margin-left: 20px
+					font-family: Roboto, sans-serif
 		.night
 			float: left
 			margin-left: 60px
@@ -124,6 +128,7 @@ header
 				float: left
 				span
 					margin-left: 20px
+					font-family: Roboto, sans-serif
 		.active span
 			border-bottom: 1px dotted #fff
 
@@ -139,6 +144,15 @@ header
 		position: absolute
 		left: 50%
 		top: 50%
+		transform: translate(-50%, -50%)
+	img[alt="background"]
+		position: absolute
+		left: 50%
+		top: 50%
+		min-width: 100%
+		min-height: 100%
+		width: auto
+		height: auto
 		transform: translate(-50%, -50%)
 	.content
 		position: relative
@@ -328,10 +342,113 @@ header
 				font-size: 22pt
 				border-radius: 5px
 				margin-top: 20px
+				cursor: pointer
 				padding: 4px 0
 				transition: background .3s ease
 				&:hover
 					background: #e2a331
+
+.header
+	padding-top: 40px
+	padding-bottom: 40px
+	.content
+		text-align: center
+		font-family: Roboto, sans-serif
+		color: #181818
+		h3
+			font-size: 40pt
+			font-weight: 700
+		h5
+			font-size: 18pt
+			font-weight: 700
+.interactive
+	background: url(../img/background/inter.jpg) no-repeat top center
+	height: 1200px
+	.content
+		position: relative
+		.choice
+			position: relative
+			background: #439094
+			border-radius: 9px
+			width: 260px
+			left: 609px
+			top: 50px
+			h3
+				font-family: Roboto, sans-serif
+				color: #fff
+				font-size: 14pt
+				float: right
+				margin-right: 25px
+			.trangle
+				position: absolute
+				bottom: -22px
+				left: 50%
+				width: 5px
+				border: 10px solid transparent
+				border-top: 12px solid #439094
+			.icon_choice
+				background: url(../img/sprite.png) no-repeat -1846px 0
+				height: 33px
+				width: 33px
+				float: left
+				margin-left: -10px
+		.photo_choose
+			width: 54px
+			height: 54px
+			background: url(../img/sprite.png) no-repeat -1306px 0
+			cursor: pointer
+			position: absolute
+			&:hover
+				background: url(../img/sprite.png) no-repeat -1253px 0
+		.photo_choose_1
+			top: 182px
+			left: 115px
+		.photo_choose_2
+			top: 115px
+			left: 507px
+		.photo_choose_3
+			top: 182px
+			right: 125px
+		.photo_choose_4
+			top: 572px
+			left: 77px
+		.photo_choose_5
+			top: 572px
+			right: 77px
+		.photo_choose_6
+			top: 936px
+			left: 144px
+		.photo_choose_7
+			top: 927px
+			right: 155px
+		.photo_choose_8
+			top: 1030px
+			left: 695px
+		.plan_elem
+			position: absolute
+			img
+				transition: opacity .3s ease
+			svg
+				cursor: pointer
+		polygon
+			//fill: rgba(0, 0, 0, 0)
+		.plan_box_1
+			top: 205px
+			left: 394px
+		.img_box_1
+			top: 205px
+			left: 394px
+		.img_box_1 *:first-child
+			position: absolute
+			top: 42px
+			left: 0px
+		.img_box_1 *:nth-child(2)
+			position: absolute
+			top: 5px
+			left: 34px
+		.plan_elem_2
+			top: 202px
+			left: 431px
 
 .map
 	height: 830px
@@ -538,6 +655,7 @@ header
 				text-transform: uppercase
 				width: 100%
 				border: 0
+				cursor: pointer
 				font-weight: 700
 				font-size: 22pt
 				border-radius: 5px
@@ -670,6 +788,8 @@ footer
 				outline: 0
 				padding: 5px
 				width: 130px
+				color: #fff
+				cursor: pointer
 				text-transform: uppercase
 				font-family: Roboto, sans-serif
 				font-size: 12pt
@@ -678,3 +798,157 @@ footer
 				&:hover
 					background: #fff
 					color: #3a3a3a
+.choice_image_block
+	position: fixed
+	top: 0
+	left: 0
+	background: rgba(0, 0, 0, .5)
+	z-index: 5
+	width: 100%
+	height: 100%
+	opacity: 1
+	transition: opacity .3s ease
+	.wrapper_for_center
+		width: 600px
+		height: 600px
+		margin: auto
+	.wrapper_for_closer
+		float: right
+		top: 20px
+		right: -15px
+		background: #fff
+		width: 35px
+		height: 35px
+		position: relative
+		cursor: pointer
+		transform: scale(1)
+		transition: transform .3s ease
+		&:hover
+			transform: scale(1.2)
+		.image_closer
+			background: url(../img/sprite.png) no-repeat -1693px 0
+			width: 30px
+			height: 30px
+			position: absolute
+			top: 50%
+			left: 50%
+			-webkit-transform: translate(-50%, -50%)
+			-moz-transform: translate(-50%, -50%)
+			-ms-transform: translate(-50%, -50%)
+			-o-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+.plan_block
+	background: rgba(0, 0, 0, .5)
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 5
+	transition: opacity .3s ease
+	.modal_plan_block
+		width: 830px
+		background: #fff
+		position: relative
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		.closer
+			background: url(../img/sprite.png) no-repeat -1693px 0
+			width: 30px
+			height: 30px
+			margin-top: 15px
+			margin-right: 15px
+			position: absolute
+			top: 0
+			right: 0
+			cursor: pointer
+		img
+			margin-top: 90px
+			margin-bottom: 30px
+			margin-left: 40px
+		.info_box
+			width: 315px
+			background: #f1f1f1
+			float: left
+			height: 581px
+			padding-top: 35px
+			padding-bottom: 45px
+			.line
+				background: #d1d1d1
+				height: 1px
+				width: 315px
+				margin-top: 35px
+				margin-bottom: 35px
+			h3
+				font-size: 22pt
+				color: #393939
+				text-align: center
+				padding-bottom: 35px
+				font-weight: bold
+			p
+				padding-left: 50px
+				font-weight: 300
+				font-size: 15pt
+			.first
+				margin-top: 25px
+				margin-bottom: 25px
+				&:hover
+					.clear
+						background: #056892
+					.icon_pdf
+						background: url(../img/sprite.png) no-repeat -1751px 0
+					span
+						color: #fff
+				.clear
+					border: 4px solid #056892
+					width: 260px
+					padding: 7px
+					margin: auto
+					margin-top: 30px
+					transition: background .3s ease
+				.icon_pdf
+					width: 24px
+					height: 29px
+					background: url(../img/sprite.png) no-repeat -1724px 0
+					float: left
+				span
+					color: #056892
+					font-size: 13pt
+					font-weight: 700
+					margin-top: 6px
+					float: left
+					padding-left: 5px
+					text-transform: uppercase
+					transition: color .3s ease
+			.second
+				margin-top: 25px
+				margin-bottom: 25px
+				&:hover
+					.clear
+						background: #056892
+					.icon_pdf
+						background: url(../img/sprite.png) no-repeat -1751px 0
+					span
+						color: #fff
+				.clear
+					border: 4px solid #056892
+					width: 260px
+					padding: 7px
+					margin: auto
+					margin-top: 30px
+					transition: background .3s ease
+				.icon_pdf
+					width: 24px
+					height: 29px
+					background: url(../img/sprite.png) no-repeat -1724px 0
+					float: left
+				span
+					color: #056892
+					font-size: 11pt
+					font-weight: 700
+					margin-top: 7px
+					float: left
+					padding-left: 5px
+					text-transform: uppercase
+					transition: color .3s ease

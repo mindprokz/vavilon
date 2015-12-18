@@ -40,7 +40,9 @@
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  min-width: 1280px; }
 
 h1, h2, h3, h4, h5, h6 {
   -webkit-margin-before: 0;
@@ -71,6 +73,7 @@ nav {
   nav a {
     text-decoration: none;
     color: #fff;
+    font-family: Roboto, sans-serif;
     padding: 10px 25px 15px 25px;
     float: left;
     font-size: 14pt;
@@ -133,7 +136,8 @@ header {
         width: 19px;
         height: 19px; }
         header .changer .day .day_icon span {
-          margin-left: 20px; }
+          margin-left: 20px;
+          font-family: Roboto, sans-serif; }
     header .changer .night {
       float: left;
       margin-left: 60px; }
@@ -143,7 +147,8 @@ header {
         height: 19px;
         float: left; }
         header .changer .night .night_icon span {
-          margin-left: 20px; }
+          margin-left: 20px;
+          font-family: Roboto, sans-serif; }
     header .changer .active span {
       border-bottom: 1px dotted #fff; }
 
@@ -159,6 +164,15 @@ header {
     position: absolute;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%); }
+  .section1 img[alt="background"] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     transform: translate(-50%, -50%); }
   .section1 .content {
     position: relative;
@@ -348,10 +362,112 @@ header {
         font-size: 22pt;
         border-radius: 5px;
         margin-top: 20px;
+        cursor: pointer;
         padding: 4px 0;
         transition: background 0.3s ease; }
         .section2 .trigger form button:hover {
           background: #e2a331; }
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .header .content {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: #181818; }
+    .header .content h3 {
+      font-size: 40pt;
+      font-weight: 700; }
+    .header .content h5 {
+      font-size: 18pt;
+      font-weight: 700; }
+
+.interactive {
+  background: url(../img/background/inter.jpg) no-repeat top center;
+  height: 1200px; }
+  .interactive .content {
+    position: relative; }
+    .interactive .content .choice {
+      position: relative;
+      background: #439094;
+      border-radius: 9px;
+      width: 260px;
+      left: 609px;
+      top: 50px; }
+      .interactive .content .choice h3 {
+        font-family: Roboto, sans-serif;
+        color: #fff;
+        font-size: 14pt;
+        float: right;
+        margin-right: 25px; }
+      .interactive .content .choice .trangle {
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        width: 5px;
+        border: 10px solid transparent;
+        border-top: 12px solid #439094; }
+      .interactive .content .choice .icon_choice {
+        background: url(../img/sprite.png) no-repeat -1846px 0;
+        height: 33px;
+        width: 33px;
+        float: left;
+        margin-left: -10px; }
+    .interactive .content .photo_choose {
+      width: 54px;
+      height: 54px;
+      background: url(../img/sprite.png) no-repeat -1306px 0;
+      cursor: pointer;
+      position: absolute; }
+      .interactive .content .photo_choose:hover {
+        background: url(../img/sprite.png) no-repeat -1253px 0; }
+    .interactive .content .photo_choose_1 {
+      top: 182px;
+      left: 115px; }
+    .interactive .content .photo_choose_2 {
+      top: 115px;
+      left: 507px; }
+    .interactive .content .photo_choose_3 {
+      top: 182px;
+      right: 125px; }
+    .interactive .content .photo_choose_4 {
+      top: 572px;
+      left: 77px; }
+    .interactive .content .photo_choose_5 {
+      top: 572px;
+      right: 77px; }
+    .interactive .content .photo_choose_6 {
+      top: 936px;
+      left: 144px; }
+    .interactive .content .photo_choose_7 {
+      top: 927px;
+      right: 155px; }
+    .interactive .content .photo_choose_8 {
+      top: 1030px;
+      left: 695px; }
+    .interactive .content .plan_elem {
+      position: absolute; }
+      .interactive .content .plan_elem img {
+        transition: opacity 0.3s ease; }
+      .interactive .content .plan_elem svg {
+        cursor: pointer; }
+    .interactive .content .plan_box_1 {
+      top: 205px;
+      left: 394px; }
+    .interactive .content .img_box_1 {
+      top: 205px;
+      left: 394px; }
+    .interactive .content .img_box_1 *:first-child {
+      position: absolute;
+      top: 42px;
+      left: 0px; }
+    .interactive .content .img_box_1 *:nth-child(2) {
+      position: absolute;
+      top: 5px;
+      left: 34px; }
+    .interactive .content .plan_elem_2 {
+      top: 202px;
+      left: 431px; }
 
 .map {
   height: 830px;
@@ -558,6 +674,7 @@ header {
         text-transform: uppercase;
         width: 100%;
         border: 0;
+        cursor: pointer;
         font-weight: 700;
         font-size: 22pt;
         border-radius: 5px;
@@ -693,6 +810,8 @@ footer {
         outline: 0;
         padding: 5px;
         width: 130px;
+        color: #fff;
+        cursor: pointer;
         text-transform: uppercase;
         font-family: Roboto, sans-serif;
         font-size: 12pt;
@@ -701,5 +820,159 @@ footer {
         footer .content form button:hover {
           background: #fff;
           color: #3a3a3a; }
+
+.choice_image_block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease; }
+  .choice_image_block .wrapper_for_center {
+    width: 600px;
+    height: 600px;
+    margin: auto; }
+  .choice_image_block .wrapper_for_closer {
+    float: right;
+    top: 20px;
+    right: -15px;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease; }
+    .choice_image_block .wrapper_for_closer:hover {
+      transform: scale(1.2); }
+    .choice_image_block .wrapper_for_closer .image_closer {
+      background: url(../img/sprite.png) no-repeat -1693px 0;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+.plan_block {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: opacity 0.3s ease; }
+  .plan_block .modal_plan_block {
+    width: 830px;
+    background: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .plan_block .modal_plan_block .closer {
+      background: url(../img/sprite.png) no-repeat -1693px 0;
+      width: 30px;
+      height: 30px;
+      margin-top: 15px;
+      margin-right: 15px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer; }
+    .plan_block .modal_plan_block img {
+      margin-top: 90px;
+      margin-bottom: 30px;
+      margin-left: 40px; }
+    .plan_block .modal_plan_block .info_box {
+      width: 315px;
+      background: #f1f1f1;
+      float: left;
+      height: 581px;
+      padding-top: 35px;
+      padding-bottom: 45px; }
+      .plan_block .modal_plan_block .info_box .line {
+        background: #d1d1d1;
+        height: 1px;
+        width: 315px;
+        margin-top: 35px;
+        margin-bottom: 35px; }
+      .plan_block .modal_plan_block .info_box h3 {
+        font-size: 22pt;
+        color: #393939;
+        text-align: center;
+        padding-bottom: 35px;
+        font-weight: bold; }
+      .plan_block .modal_plan_block .info_box p {
+        padding-left: 50px;
+        font-weight: 300;
+        font-size: 15pt; }
+      .plan_block .modal_plan_block .info_box .first {
+        margin-top: 25px;
+        margin-bottom: 25px; }
+        .plan_block .modal_plan_block .info_box .first:hover .clear {
+          background: #056892; }
+        .plan_block .modal_plan_block .info_box .first:hover .icon_pdf {
+          background: url(../img/sprite.png) no-repeat -1751px 0; }
+        .plan_block .modal_plan_block .info_box .first:hover span {
+          color: #fff; }
+        .plan_block .modal_plan_block .info_box .first .clear {
+          border: 4px solid #056892;
+          width: 260px;
+          padding: 7px;
+          margin: auto;
+          margin-top: 30px;
+          transition: background 0.3s ease; }
+        .plan_block .modal_plan_block .info_box .first .icon_pdf {
+          width: 24px;
+          height: 29px;
+          background: url(../img/sprite.png) no-repeat -1724px 0;
+          float: left; }
+        .plan_block .modal_plan_block .info_box .first span {
+          color: #056892;
+          font-size: 13pt;
+          font-weight: 700;
+          margin-top: 6px;
+          float: left;
+          padding-left: 5px;
+          text-transform: uppercase;
+          transition: color 0.3s ease; }
+      .plan_block .modal_plan_block .info_box .second {
+        margin-top: 25px;
+        margin-bottom: 25px; }
+        .plan_block .modal_plan_block .info_box .second:hover .clear {
+          background: #056892; }
+        .plan_block .modal_plan_block .info_box .second:hover .icon_pdf {
+          background: url(../img/sprite.png) no-repeat -1751px 0; }
+        .plan_block .modal_plan_block .info_box .second:hover span {
+          color: #fff; }
+        .plan_block .modal_plan_block .info_box .second .clear {
+          border: 4px solid #056892;
+          width: 260px;
+          padding: 7px;
+          margin: auto;
+          margin-top: 30px;
+          transition: background 0.3s ease; }
+        .plan_block .modal_plan_block .info_box .second .icon_pdf {
+          width: 24px;
+          height: 29px;
+          background: url(../img/sprite.png) no-repeat -1724px 0;
+          float: left; }
+        .plan_block .modal_plan_block .info_box .second span {
+          color: #056892;
+          font-size: 11pt;
+          font-weight: 700;
+          margin-top: 7px;
+          float: left;
+          padding-left: 5px;
+          text-transform: uppercase;
+          transition: color 0.3s ease; }
 
 /*# sourceMappingURL=style.css.map */
