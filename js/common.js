@@ -1,18 +1,27 @@
 $(document).ready(function() {
 
-	//Цели для Яндекс.Метрики и Google Analytics
-	$(".count_element").on("click", (function() {
-		ga("send", "event", "goal", "goal");
-		yaCounterXXXXXXXX.reachGoal("goal");
-		return true;
-	}));
-	new WOW().init();
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
+	$('img[data-src]').each(function(){
+		$(this).attr('src', $(this).attr('data-src') );
+	});
+
+	$(".fancybox").click(function() {
+		$(".fancybox").fancybox({
+			maxWidth: 800,
+			maxHeight: 600,
+			fitToView: false,
+			width: '80%',
+			height: '80%',
+			autoSize: false,
+			closeClick: false,
+			openEffect: 'fade',
+			closeEffect: 'fade',
+			helpers: {
+				title: {
+					type: 'inside'
+				}
+			}
 		});
-	};
+	});
 	//$('#app').on('click',function() {
     //
 	//});
@@ -105,25 +114,20 @@ $(document).ready(function() {
 		});
 		return false;
 	});
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+	$(document).on('click', 'a[href^=#]', function () {
+		$('html, body').animate({ scrollTop:  $('a[name="'+this.hash.slice(1)+'"]').offset().top - 73 }, 1000 );
+		return false;
+	});
 });
 
 function initialize_main() {
 	var myLatlng = new google.maps.LatLng(43.207504, 76.883809);
 	var myCenterMarker = new google.maps.LatLng(43.207504, 76.883809);
 	var myOptions = {
-		zoom: 14,
+		zoom: 17,
 		center: myLatlng,
 		disableDefaultUI: true,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -138,3 +142,16 @@ function initialize_main() {
 };
 //Инициализация карты
 initialize_main();
+
+setInterval(function(){
+	if(window.pageYOffset > 300){
+		document.querySelector('#float_menu').classList.remove('closed_menu');
+		document.querySelector('#float_menu').classList.add('opened_menu');
+	}else{
+		document.querySelector('#float_menu').classList.add('closed_menu');
+		document.querySelector('#float_menu').classList.remove('opened_menu');
+	};
+},200);
+
+var a = new Image();
+a.src = 'pano/pano.jpg';

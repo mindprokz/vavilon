@@ -18,6 +18,7 @@ gulp.task('css', function () {
 	gulp.src('css/style.css')
     //.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer('last 10 version'))
+	.pipe(minifyCss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('css/'));
 });
