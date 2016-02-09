@@ -62,6 +62,116 @@
                 link : 'img\\blocks_1\\block_10_big.png',
                 catalog : 'img\\blocks_1\\catalog_3.pdf'
             },
+            {
+                flat : '3',
+                square : 127.2,
+                link : '../img/blocks_1/house8_4.jpg',
+                catalog : '/../img/blocks_1/house8_4_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 52.9,
+                link : '../img/blocks_1/house8_3.jpg',
+                catalog : '/../img/blocks_1/house8_3_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 52.9,
+                link : '../img/blocks_1/house8_2.jpg',
+                catalog : '/../img/blocks_1/house8_2_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 127.2,
+                link : '../img/blocks_1/house8_1.jpg',
+                catalog : '/../img/blocks_1/house8_1_down.pdf'
+            },
+            {
+                flat : '3',
+                square : 107.8,
+                link : '../img/blocks_1/house7_5.jpg',
+                catalog : '/../img/blocks_1/house7_5_down.pdf'
+            },
+            {
+                flat : '3',
+                square : 56.5,
+                link : '../img/blocks_1/house7_4.jpg',
+                catalog : '/../img/blocks_1/house7_4_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 48.9,
+                link : '../img/blocks_1/house7_3.jpg',
+                catalog : '/../img/blocks_1/house7_3_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 56.5,
+                link : '../img/blocks_1/house7_2.jpg',
+                catalog : '/../img/blocks_1/house7_2_down.pdf'
+            },
+            {
+                flat : '3',
+                square : 107.8,
+                link : '../img/blocks_1/house7_1.jpg',
+                catalog : '/../img/blocks_1/house7_1_down.pdf'
+            },
+
+            {
+                flat : '3',
+                square : 100.5,
+                link : '../img/blocks_1/house6_4.jpg',
+                catalog : '/../img/blocks_1/house6_4_down.pdf'
+            },
+            {
+                flat : '2',
+                square : 82.1,
+                link : '../img/blocks_1/house6_3.jpg',
+                catalog : '/../img/blocks_1/house6_3_down.pdf'
+            },
+            {
+                flat : '2',
+                square : 81.8,
+                link : '../img/blocks_1/house6_2.jpg',
+                catalog : '/../img/blocks_1/house6_2_down.pdf'
+            },
+            {
+                flat : '3',
+                square : 100.5,
+                link : '../img/blocks_1/house6_1.jpg',
+                catalog : '/../img/blocks_1/house6_1_down.pdf'
+            },
+
+            {
+                flat : '3',
+                square : 109.2,
+                link : '../img/blocks_1/house5_5.jpg',
+                catalog : '/../img/blocks_1/house5_5_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 57.2,
+                link : '../img/blocks_1/house5_4.jpg',
+                catalog : '/../img/blocks_1/house5_4_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 49.1,
+                link : '../img/blocks_1/house5_3.jpg',
+                catalog : '/../img/blocks_1/house5_3_down.pdf'
+            },
+            {
+                flat : '1',
+                square : 57.2,
+                link : '../img/blocks_1/house5_2.jpg',
+                catalog : '/../img/blocks_1/house5_2_down.pdf'
+            },
+            {
+                flat : '3',
+                square : 109.2,
+                link : '../img/blocks_1/house5_1.jpg',
+                catalog : '/../img/blocks_1/house5_1_down.pdf'
+            },
         ];
 
     for (var i = 0, len = all_plans_svg.length; i < len; i++){
