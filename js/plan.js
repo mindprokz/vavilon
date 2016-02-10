@@ -2,170 +2,196 @@
     var all_plans_svg = document.querySelectorAll('.plan_elem polygon'),
         img_collection = document.querySelectorAll('img[alt="plan_"]'),
         img_src = [
+            //1
             {
                 flat : '3',
                 square : 100.5,
                 link : 'img\\blocks_1\\block_1_big.png',
                 catalog : 'img\\blocks_1\\catalog_9.pdf'
             },
+            //2
             {
                 flat : '2',
                 square : 81.9,
                 link : 'img\\blocks_1\\block_2_big.png',
                 catalog : 'img\\blocks_1\\catalog_17.pdf'
             },
+            //3
             {
                 flat : '2',
                 square : 81.9,
                 link : 'img\\blocks_1\\block_3_big.png',
                 catalog : 'img\\blocks_1\\catalog_7.pdf'
             },
+            //4
             {
                 flat : '3',
                 square : 100.4,
                 link : 'img\\blocks_1\\block_4_big.png',
                 catalog : 'img\\blocks_1\\catalog_6.pdf'
             },
+            //5
             {
                 flat : '3',
                 square : 109.2,
                 link : 'img\\blocks_1\\block_5_big.png',
                 catalog : 'img\\blocks_1\\catalog_5.pdf'
             },
+            //6
             {
                 flat : '1',
                 square : 57.2,
                 link : 'img\\blocks_1\\block_6_big.png',
                 catalog : 'img\\blocks_1\\catalog_4.pdf'
             },
+            //7
             {
                 flat : '1',
                 square : 49.1,
                 link : 'img\\blocks_1\\block_7_big.png',
                 catalog : 'img\\blocks_1\\catalog_12.pdf'
             },
+            //8
             {
                 flat : '1',
                 square : 57.2,
                 link : 'img\\blocks_1\\block_8_big.png',
                 catalog : 'img\\blocks_1\\catalog_11.pdf'
             },
+            //9
             {
                 flat : '3',
                 square : 109.2,
                 link : 'img\\blocks_1\\block_9_big.png',
                 catalog : 'img\\blocks_1\\catalog_2.pdf'
             },
+            //10
             {
                 flat : '3',
                 square : 105.4,
                 link : 'img\\blocks_1\\block_10_big.png',
                 catalog : 'img\\blocks_1\\catalog_3.pdf'
             },
+            //12
             {
                 flat : '3',
                 square : 127.2,
                 link : '../img/blocks_1/house8_4.jpg',
                 catalog : '/../img/blocks_1/house8_4_down.pdf'
             },
+            //13
             {
                 flat : '1',
                 square : 52.9,
                 link : '../img/blocks_1/house8_3.jpg',
                 catalog : '/../img/blocks_1/house8_3_down.pdf'
             },
+            //14
             {
                 flat : '1',
                 square : 52.9,
                 link : '../img/blocks_1/house8_2.jpg',
                 catalog : '/../img/blocks_1/house8_2_down.pdf'
             },
+            //15
             {
                 flat : '1',
                 square : 127.2,
                 link : '../img/blocks_1/house8_1.jpg',
                 catalog : '/../img/blocks_1/house8_1_down.pdf'
             },
+            //16
             {
                 flat : '3',
                 square : 107.8,
                 link : '../img/blocks_1/house7_5.jpg',
                 catalog : '/../img/blocks_1/house7_5_down.pdf'
             },
+            //17
             {
                 flat : '3',
                 square : 56.5,
                 link : '../img/blocks_1/house7_4.jpg',
                 catalog : '/../img/blocks_1/house7_4_down.pdf'
             },
+            //17
             {
                 flat : '1',
                 square : 48.9,
                 link : '../img/blocks_1/house7_3.jpg',
                 catalog : '/../img/blocks_1/house7_3_down.pdf'
             },
+            //18
             {
                 flat : '1',
                 square : 56.5,
                 link : '../img/blocks_1/house7_2.jpg',
                 catalog : '/../img/blocks_1/house7_2_down.pdf'
             },
+            //19
             {
                 flat : '3',
                 square : 107.8,
                 link : '../img/blocks_1/house7_1.jpg',
                 catalog : '/../img/blocks_1/house7_1_down.pdf'
             },
-
+            //20
             {
                 flat : '3',
                 square : 100.5,
                 link : '../img/blocks_1/house6_4.jpg',
                 catalog : '/../img/blocks_1/house6_4_down.pdf'
             },
+            //21
             {
                 flat : '2',
                 square : 82.1,
                 link : '../img/blocks_1/house6_3.jpg',
                 catalog : '/../img/blocks_1/house6_3_down.pdf'
             },
+            //22
             {
                 flat : '2',
                 square : 81.8,
                 link : '../img/blocks_1/house6_2.jpg',
                 catalog : '/../img/blocks_1/house6_2_down.pdf'
             },
+            //23
             {
                 flat : '3',
                 square : 100.5,
                 link : '../img/blocks_1/house6_1.jpg',
                 catalog : '/../img/blocks_1/house6_1_down.pdf'
             },
-
+            //24
             {
                 flat : '3',
                 square : 109.2,
                 link : '../img/blocks_1/house5_5.jpg',
                 catalog : '/../img/blocks_1/house5_5_down.pdf'
             },
+            //25
             {
                 flat : '1',
                 square : 57.2,
                 link : '../img/blocks_1/house5_4.jpg',
                 catalog : '/../img/blocks_1/house5_4_down.pdf'
             },
+            //26
             {
                 flat : '1',
                 square : 49.1,
                 link : '../img/blocks_1/house5_3.jpg',
                 catalog : '/../img/blocks_1/house5_3_down.pdf'
             },
+            //27
             {
                 flat : '1',
                 square : 57.2,
                 link : '../img/blocks_1/house5_2.jpg',
                 catalog : '/../img/blocks_1/house5_2_down.pdf'
             },
+            //28
             {
                 flat : '3',
                 square : 109.2,
