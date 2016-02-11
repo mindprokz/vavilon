@@ -707,7 +707,8 @@ header {
         padding-top: 10px; }
 
 .section4 {
-  background: url(../img/background/blue.jpg) no-repeat center top; }
+  background: url(../img/background/blue.jpg) no-repeat center top;
+  padding-bottom: 25px; }
   .section4 .content h2 {
     padding-top: 20px;
     color: #4b4b4b;
@@ -724,9 +725,20 @@ header {
     margin-left: 245px;
     padding-bottom: 20px;
     line-height: 1.3; }
+  .section4 .content .button {
+    padding: 10px 25px;
+    border: 2px solid rgba(198, 143, 42, 0.8);
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    width: 360px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 19pt;
+    color: #fff; }
   .section4 .content .quality {
-    padding-top: 190px;
-    padding-bottom: 50px; }
+    padding-top: 145px;
+    padding-bottom: 25px; }
     .section4 .content .quality .box_quality {
       background: rgba(198, 143, 42, 0.8);
       width: 270px;
