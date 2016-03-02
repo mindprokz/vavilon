@@ -198,6 +198,41 @@
                 link : '../img/blocks_1/house5_1.jpg',
                 catalog : '/../img/blocks_1/house5_1_down.pdf'
             },
+            // 29
+            {
+                flat : '1',
+                square : 49.0,
+                link : '../img/blocks_1/house1_3.jpg',
+                catalog : '/../img/blocks_1/house1_3.pdf'
+            },
+            // 30
+            {
+                flat : '3',
+                square : 107.8,
+                link : '../img/blocks_1/house1_1.jpg',
+                catalog : '/../img/blocks_1/house1_1.pdf'
+            },
+            // 31
+            {
+                flat : '1',
+                square : 56.4,
+                link : '../img/blocks_1/house1_2.jpg',
+                catalog : '/../img/blocks_1/house1_2.pdf'
+            },
+            // 32
+            {
+                flat : '1',
+                square : 56.4,
+                link : '../img/blocks_1/house1_4.jpg',
+                catalog : '/../img/blocks_1/house1_4.pdf'
+            },
+            // 33
+            {
+                flat : '3',
+                square : 107.8,
+                link : '../img/blocks_1/house1_5.jpg',
+                catalog : '/../img/blocks_1/house1_5.pdf'
+            },
         ];
 
     for (var i = 0, len = all_plans_svg.length; i < len; i++){
@@ -223,7 +258,7 @@
             <span class="bold">Тип:</span> '+ img_src[iterator_object].flat+'-комнатная <br> \
             <span class="bold">Площадь:</span> '+ img_src[iterator_object].square +' м2 \
             </p> \
-            <a href="'+ location.href + img_src[iterator_object].catalog +'" class="first" download> \
+            <a href="'/*+ location.href*/ + img_src[iterator_object].catalog +'" class="first" download> \
                 <div class="clear"> \
                 <div class="icon_pdf"></div> \
                 <span>Скачать планировку</span> \

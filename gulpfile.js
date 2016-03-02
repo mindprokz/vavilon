@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	minifyCss = require('gulp-minify-css'),
 	autoprefixer = require('gulp-autoprefixer'),
 	uglify = require('gulp-uglify'),
-	//sass = require('gulp-sass'),
+	sass = require('gulp-ruby-sass'),
 	livereload = require('gulp-livereload'),
 	rename = require('gulp-rename');
 
@@ -23,6 +23,15 @@ gulp.task('css', function () {
     .pipe(gulp.dest('css/'));
 });
 
+gulp.task('sass', function () {
+  return sass('css/style.sass')
+    .on('error', sass.logError)
+    .pipe(autoprefixer('last 10 version'))
+	.pipe(minifyCss())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('css'));
+});
+
 // task for JS 
 gulp.task('js', function() {
   return gulp.src('js/*.js')
@@ -33,10 +42,10 @@ gulp.task('js', function() {
 
 // taks for watch change files
 gulp.task('watch', function(){
-	gulp.watch('css/style.css', ['css']);
+	gulp.watch('css/style.sass', ['sass']);
 	gulp.watch('index.html', ['html']);
 	gulp.watch('js/*.js', ['js']);
 });
 
 // default task
-gulp.task('default', ['html','css','js','watch']);
+gulp.task('default', ['html','sass','js','watch']);
